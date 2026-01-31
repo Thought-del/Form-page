@@ -3,20 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form page | Frontend mentor</title>
 
+  <!-- Meta tags for SEO -->
+  <title>Form page | Frontend mentor</title>
+  <meta name="description" content="Join 60,000+ product managers receiving monthly updates on product discovery, success metrics, and building what matters. Subscribe to our newsletter today.">
+
+  <!-- Keywords -->
+  <meta name="keywords" content="product management, newsletter, product discovery, metrics, PM, product manager, monthly updates">
+
+  <!-- CSS and JavaScript files -->
   <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
 </head>
 <body>
   <main class="container">
-    <div class="container_content">
+    <section class="container_content" aria-labelledby="newsletter-title">
       <div class="container__title">
         <h1>Stay updated!</h1>
-        <h3>Join 60,000+ product managers receiving monthly updates on:</h3>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
       </div>
 
-      <div class="container__">
+      <div class="container__list">
         <ul>
           <li>Product discovery and building what matters</li>
           <li>Measuring to ensure updates are a success</li>
@@ -25,21 +32,24 @@
       </div>
 
       <div class="container__form">
-        <form action="">
-          <label for="email"></label>
-          <input type="email" id="email" name="email" required />
-          <span class="error" aria-live="">Valid email required</span>
+        <form action="" novalidate aria-label="Newsletter subscription form">
+          <label for="email">Email address</label>
+          <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          required 
+          placeholder="email@company.com" 
+          aria-required="true"/>
+          <span class="error" aria-live="polite">Valid email required</span>
+          <button type="submit">Subscribe to monthly newsletter</button>
         </form>
-
-        <div class="container__button">
-          <button>Subscribe to monthly newsletter</button>
-        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container_image">
+    <section class="container_image" aria-label="Newsletter illustration">
       <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
-    </div>
+    </section>
   </main>
 </body>
 </html>
