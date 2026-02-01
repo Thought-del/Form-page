@@ -11,3 +11,68 @@
     font-weight: 400;
     font-display: swap;
 }
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(234, 29%, 20%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    min-height: 100vh;
+    padding: 24px;
+    display:grid;
+    place-items: center;
+}
+
+.container {
+    max-width: 450px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 32px;
+    padding: 24px;
+}
+
+.container_content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 26px;
+    font-weight: 700;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    padding: 17px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right bottom, hsl(4, 100%, 80%), hsl(4, 100%, 67%), hsl(23, 95%, 63%), hsl(4, 100%, 60%));
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    display: block;
+    object-fit: cover;
+}
