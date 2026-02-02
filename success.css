@@ -66,8 +66,10 @@ button {
     transition: background 0.3s ease;
 }
 
-button:hover {
-    background: linear-gradient(to right bottom, hsl(4, 100%, 80%), hsl(4, 100%, 67%), hsl(23, 95%, 63%), hsl(4, 100%, 60%));
+button:hover,
+button:focus {
+    background: linear-gradient(to right, hsl(4, 100%, 67%), hsl(4, 100%, 67%));
+    outline: none;
 }
 
 img {
